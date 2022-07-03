@@ -9,7 +9,5 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 5;
     assertEquals(expected, calculate.sum(2, 3));
-    assertEquals(25, calculate.sumOdd(1, 10));
-    assertEquals(30, calculate.sumEven(1, 10));
   }
 }

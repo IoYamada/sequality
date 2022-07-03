@@ -5,6 +5,10 @@ public class Calculate {
     return x + y;
   }
 
+  public double average(int x) {
+    return x / 2.0;
+  }
+
   public int sumXToY(int x, int y) {
     int num = 0;
     for (int i = x; i <= y; i++) {

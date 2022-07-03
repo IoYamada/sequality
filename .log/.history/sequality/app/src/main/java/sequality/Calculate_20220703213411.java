@@ -5,17 +5,13 @@ public class Calculate {
     return x + y;
   }
 
-  public int sumXToY(int x, int y) {
-    int num = 0;
-    for (int i = x; i <= y; i++) {
-      num += i;
-    }
-    return num;
+  public double average(int x) {
+    return x / 2.0;
   }
 
-  public int sumOdd(int x, int y) {
+  public int odd(int x, int y) {
     int num = 0;
-    for (int i = x; i <= y; i++) {
+    for (int i = x; i <= y; x++) {
       if (i % 2 == 1) {
         num += i;
       }
@@ -23,13 +19,18 @@ public class Calculate {
     return num;
   }
 
-  public int sumEven(int x, int y) {
+  public int even(int x, int y) {
     int num = 0;
-    for (int i = x; i <= y; i++) {
+    for (int i = x; i <= y; x++) {
       if (i % 2 == 0) {
         num += i;
       }
     }
     return num;
   }
+
+  public static void main(int x, int y) {
+    System.out.println(new Calculate().getGreeting());
+  }
+
 }
